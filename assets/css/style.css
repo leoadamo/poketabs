@@ -31,6 +31,7 @@ body {
 
 /* Container principal */
 .flex-container {
+  width: 100%;
   /* Define 100% da viewport como altura do container */
   height: 100vh;
   display: flex;
@@ -140,3 +141,41 @@ body {
 /* Fim do container de itens */
 
 /* Fim do container principal */
+
+/* Responsivo */
+
+/* Celulares */
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+  .title {
+    width: 300px;
+  }
+
+  .itens {
+    flex-wrap: wrap;
+    width: 70%;
+    height: 20%;
+    margin-top: -70%;
+  }
+
+  .flex-item:nth-of-type(1),
+  .flex-item:nth-of-type(2),
+  .flex-item:nth-of-type(3) {
+    background-size: 50%;
+  }
+
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+
+  .itens {
+    width: 80%;
+    height: 30%;
+    margin-top: -30%;
+  }
+}
+
+/* Fim do responsivo */
